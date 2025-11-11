@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ccc;
+  border: 3px solid #333;
+  padding: 15px;
+}
+
+#titulo {
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.containerInput {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#agregarValor {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tareasContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  flex-grow: 2;
+}
+
+.info div {
+  display: flex;
+  gap: 10px;
+}
+
+.info div p {
+  color: #333;
+  font-weight: bold;
+}
+
+.tareas {
+  flex-grow: 1;
+}
+
+table {
+  text-align: left;
+}
+
+th,
+td {
+  padding-right: 30px;
+}
+
+.tareaTd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tareaNombre {
+  text-decoration: line-through;
+}
+
+#botonBorrar {
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .tareasContainer {
+    flex-direction: column;
+  }
+}

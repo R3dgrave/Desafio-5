@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUDU_LIST</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 id="titulo">Todo List:</h1>
+        <label>Nueva Tarea:</label>
+        <div class="containerInput">
+          <input id="nuevoValor" type="text" />
+          <button id="agregarValor">agregar</button>
+        </div>
+      </div>
+      <div class="tareasContainer">
+        <div class="info">
+          <div>
+            <p>Total:</p>
+            <span id="totalTareas">0</span>
+          </div>
+          <div>
+            <p>Realizadas:</p>
+            <span id="tareasRealizadas">0</span>
+          </div>
+        </div>
+        <div class="tareas"">
+          <h3>lista de tareas:</h3>
+          <table>
+            <tr>
+              <th>ID</th>
+              <th>Tarea</th>
+            </tr>
+            <tbody id="listaTareas">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
